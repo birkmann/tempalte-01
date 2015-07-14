@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+	outline: 0 none;
+}
+
+body {
+	font: normal 18px/1.6em sans-serif;
+}
+
+.wrapper {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container {
+	@include container;
+	/* height: 100vh; */
+}
+
+.row {
+	@include clearfix;
+	.col-6 {
+		@include breakpoint(laptop) {
+			@include span(6);
+		}
+		&:last-child {
+			@include breakpoint(laptop) {
+				@include span(6 last);
+			}
+		}
+		&.last-child {
+			@include breakpoint(laptop) {
+				@include span(6 last);
+			}
+		}
+	}
+}
