@@ -1,3 +1,5 @@
+// http://www.blitzagency.com/
+
 * {
 	box-sizing: border-box;
 	outline: 0 none;
@@ -38,22 +40,21 @@ body {
 	}
 }
 
-.menu-hover {
-	.page-wrapper {
-
-    	transform: matrix3d(
-    				1, 0, 0, -0.00005,
-    				0, 1, 0, 0,
-    				0, 0, 1, 0,
-    				50, 0, 0, 1);
+@include breakpoint(laptop) {
+	.menu-hover {
+		.page-wrapper {
+			transform: matrix3d(
+	    				1, 0, 0, -0.00005,
+	    				0, 1, 0, 0,
+	    				0, 0, 1, 0,
+	    				50, 0, 0, 1);
+		}
 	}
-}
-
-.page-wrapper {
-	display: block;
-	// transform-origin: 0% 0% 0px;
-	transform-style: preserve-3d;
-	transition: transform .25s ease-in-out;
+	.page-wrapper {
+		display: block;
+		perspective: 1000px;
+		transition: transform .25s ease-in-out;
+	}
 }
 
 .page {
