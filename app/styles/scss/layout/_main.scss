@@ -6,6 +6,7 @@
 }
 
 body {
+	background: #000;
 	font: normal 18px/1.6em sans-serif;
 	overflow-x: hidden;
 }
@@ -44,11 +45,11 @@ body {
 	.menu-hover {
 		.page-wrapper {
 			transform: matrix3d(
-	    				1, 0, 0, -0.00005,
-	    				0, 1, 0, 0,
-	    				0, 0, 1, 0,
-	    				50, 0, 0, 1);
-		}
+				1, 0, 0, -0.00005,
+				0, 1, 0, 0,
+				0, 0, 1, 0,
+				60, 0, 0, 1);
+			}
 	}
 	.page-wrapper {
 		display: block;
