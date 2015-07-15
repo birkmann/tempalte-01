@@ -84,6 +84,15 @@ body {
 			background-size: 100%;
 		}
 	}
+	&.page-work {
+		background: #000;
+	}
+	&.page-clients {
+		background: #111;
+	}
+	&.page-solutions {
+		background: #222;
+	}
 	h2 {
 		font: 800 3em/1.6em "Helvetica", sans-serif;
 		text-transform: uppercase;
